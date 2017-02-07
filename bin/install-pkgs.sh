@@ -1,3 +1,3 @@
 #!/bin/bash
-cd ~/home/ec2-user/alarm
+cd /alarm
 npm install && npm run build
