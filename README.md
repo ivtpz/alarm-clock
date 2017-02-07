@@ -1,4 +1,6 @@
-# Simple React Webpack Seed
+# This Clock Moos.
+
+Built from Mike Hughe's [React Webpack Seed](https://github.com/Hughes89/react-webpack-seed)
 
 ## Installation
 If you don't have Node.js installed please visit [NodeJS.org](https://nodejs.org/en/)

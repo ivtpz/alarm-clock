@@ -1,3 +1,82 @@
-.header {
-  color: blue;
+.App {
+  margin-top: 20%;
+  text-align: center;
+  font-size: 2.5em;
 }
+
+.time-input {
+  border: none;
+  width: 50px;
+  height: 40px;
+}
+
+.wrapper {
+  text-align: left;
+  width: 80%;
+  margin: 150px 0 0;
+  position: absolute;
+  padding-right: 300px;
+  top: 30%;
+}
+
+.wrapper-appear.wrapper-appear-active {
+  transform: rotate(180deg);
+  transition: all 2500ms ease-in-out;
+}
+
+.cow {
+  display: inline-block;
+}
+
+.cow-appear.cow-appear-active {
+  transition: transform 2500ms ease-in-out;
+  transform: rotate(-180deg);
+
+}
+
+.countdown-button {
+  display: block;
+  margin: 0 auto;
+  width: 100px;
+  height: 40px;
+  font-size: .7em;
+  color: ghostwhite;
+  border-radius: 8px;
+  border: 2px solid grey;
+  outline: none;
+}
+
+.countdown-button.start {
+  background-color: green;
+}
+
+.countdown-button.start:hover {
+  background-color: #0fbc00;
+  cursor: pointer;
+}
+
+.countdown-button.cancel {
+  background-color: #ba2714;
+}
+
+.countdown-button.cancel:hover {
+  background-color: #f92104;
+  cursor: pointer;
+}
+
+input {
+  width: 50px;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+input[type="number"] {
+    -moz-appearance: textfield;
+    font-size: 1em;
+    text-align: right;
+}
+
+

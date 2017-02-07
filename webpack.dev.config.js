@@ -1,15 +1,13 @@
 var webpack = require('webpack');
 var path = require('path');
+var merge = require('webpack-merge');
+var baseConfig = require('./webpack.base.config.js');
 
-module.exports = {
+module.exports = merge(baseConfig, {
   entry: [
     'webpack-dev-server/client?http://localhost:8080/',
     './src/index.js'
   ],
-  output: {
-     path: path.resolve(__dirname, 'public'),
-     filename: 'bundle.js',
-    },
   watch: true,
   devtool: 'eval',
   devServer: {
@@ -22,23 +20,6 @@ module.exports = {
       }
     }
   },
-  module: {
-    loaders: [
-      {
-        test: /\.(js|jsx)$/,
-        loader: 'babel-loader',
-        include: path.resolve(__dirname, 'src'),
-        exclude: /node_modules/,
-        query: {
-          presets: ['es2015', 'react', 'stage-0']
-        }
-      },
-      {
-        test: /\.css$/,
-        loader: 'style!css!sass'
-      }
-    ],
-  },
   resolve: {
 		extensions: ['', '.js', '.jsx']
 	},
@@ -46,4 +27,4 @@ module.exports = {
       new webpack.HotModuleReplacementPlugin(),  
       new webpack.NoErrorsPlugin()
     ]
-};
+});
