@@ -1,4 +1,4 @@
-# This Clock Moos.
+# This Clock Moos!
 
 Built from Mike Hughes' [React Webpack Seed](https://github.com/Hughes89/react-webpack-seed)
 
